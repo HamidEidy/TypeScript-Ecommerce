@@ -29,10 +29,18 @@
     </header>
     <nav class="col-11 d-flex justify-content-between align-items-center">
       <div id="routlink">
-        <a href="">محصولات</a>
-        <a href="">راهنمای خرید</a>
-        <a href="">گارانتی</a>
-        <a href="">سایر...</a>
+    <nuxt-link to="/Menu">محصولات</nuxt-link>
+    <nuxt-link to="/how-to-buy">راهنمای خرید</nuxt-link>
+    <nuxt-link to="/waranty-rules">شرایط گارانتی</nuxt-link>
+
+    <div class="dropdown">
+      <button class="dropbtn">سایر ...</button>
+      <div class="dropdown-content">
+        <a href="#">خرید اقساطی</a>
+        <a href="#">تماس با ما</a>
+        <a href="#">سوالات متداول</a>
+      </div>
+    </div>
       </div>
       <a id="me" href="">لینکدین من</a>
     </nav>
