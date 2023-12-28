@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>{{ state.coun }}</h1>
-  </div>
+  <NuxtLayout />
+  <NuxtPage />
+
 </template>
 
 <script setup lang="ts">
