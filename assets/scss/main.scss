@@ -1,7 +1,28 @@
 @import "bootstrap/dist/css/bootstrap.rtl.min.css";
 @import "./bootstrap-icons.css";
+$bg-color: #fbfbfb;
+$primary: #008072;
+$primary_light: #edfbfc;
+$danger: #e05c5c;
+$success: #25ac9e;
+$warning: #f8a503;
+$danger_light: #ffefef;
+$primary-dim: #aecacc;
+$success-light: #effff7;
+$warning-light: #fff8ea;
+$light: #ebebeb;
+$white: #f9f9f9;
+$grey: #737373;
+$text-color: #4c5e60;
+$product-variant: #f3f3f3;
+$basket-item-variants: #f8f9fa;
+$text-light-color: #868686;
+$bg-color: #fbfbfb;
+$border-color: #ebebeb;
+$pure-white: #fff;
+$text-color: rgb(76, 94, 96);
 @font-face {
-    font-family: "Yekan";
+    font-family: "Vazir";
     src: url(../fonts/Vazir.eot);
     /* IE9 Compat Modes */
     src:
@@ -11,17 +32,33 @@
         url(../fonts/Vazir.ttf) format("truetype");
     /* Safari, Android, iOS */
 }
+@font-face {
+    font-family: "Yekan";
+    src: url(../fonts/yekan/yekan.eot);
+    /* IE9 Compat Modes */
+    src:
+        url(../fonts/yekan/yekan-regular.eot) format("embedded-opentype"),
+        url(../fonts/yekan/yekan-regular.woff) format("woff2"),
+        url(../fonts/yekan/yekan.woff) format("woff"),
+        url(../fonts/yekan/yekan.ttf) format("truetype");
+    /* Safari, Android, iOS */
+}
 
 body {
     font-family: "Yekan";
     height: 1000px;
     direction: rtl;
-    color: #58595b;
+    color: $text-color;
+    background-color: $bg-color;
 }
 .paddinglayout {
     padding: 0px 100px;
 }
+.head{
+
+    background-color: #ffffff;
 header {
+    background-color: #ffffff;
     p {
         font-size: 10px;
         font-weight: 900;
@@ -39,7 +76,7 @@ header {
         border: none;
         padding-right: 17px;
         font-size: 13px;
-        background-color: #f9f9f9;
+        background-color: $white;
         font-family: "Yekan";
         color: #737373;
     }
@@ -47,15 +84,15 @@ header {
         position: absolute;
         margin-right: 420px;
         margin-top: 8px;
-        color: #00a693;
+        color: $primary;
         font-weight: bold;
     }
     #icons {
         font-size: 18px;
         i {
-            background-color: aliceblue;
+            background-color: $primary_light;
             margin: 0px 10px;
-            color: #00a693;
+            color: $primary;
             border-radius: 50px;
             padding: 4px 10px;
         }
@@ -68,54 +105,195 @@ header {
         }
     }
 }
-
 nav {
-    border-bottom: 1px solid black;
+    background-color: #ffffff;
+    height: 35px;
+
     a {
         text-decoration: none;
-        color: #58595b;
         display: inline;
         padding: 0px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: $text-color;
     }
 }
 
-.slider img{
+.slider img {
     height: 60vh;
 }
 .dropbtn {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     color: #58595b;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
     border-radius: 10px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
     padding: 10px 0px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: #58595b;
     padding: 10px 10px;
     font-size: 14px;
     text-decoration: none;
     display: block;
+}
+
+.dropdown-content a:hover {
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+//.dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+.sugest{
+    background-color: $primary_light;
+    padding: 50px 0px;
+
+    h1{
+        color: $primary;
+    text-decoration:underline;
+    font-size: 35px;
+    margin-bottom: 15px;
+    } swiper-container {
+      width: 300px;
+      height: 300px;
+    
+    }
+    
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+    
+    swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+
+
+
+
+
+}
+.menu{
+
+    .col {
+        text-align: center;
+        padding: 20px 0px;
+      
+      }
+      h2 {
+        font-size: 15px;
+      }
+      img{
+          margin-bottom: 20px;
+          width: 50px;
+      }
+      
+      .col:hover{
+         cursor: pointer;
+         border: none;
+         box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+         transition: .1s;
+      }
+}
+.subscribe{
+    
+.mail {
+position: absolute;
+margin-top: 10px;
+    background-color: #ffff;
+    margin-bottom: 50px;
+border-radius: 10px;
+
+.col-8{
+    border-left: 1px solid black ;
+    height: 70px;
+}
+.col-4{
+    i{
+        font-size: 25px;
+        padding: 5px 10px 0px 10px;
+        border-radius: 10px;
+    }
+    .bi-youtube{
+color: $danger;
+    }
+    .bi-instagram{
+color:  #C13584 ;
+    }
+    .bi-twitter{
+     color:   #1D9BF0 ;
+    }
+}
   }
-  
-  .dropdown-content a:hover {color: #000000;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-   //.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .mail p {
+   margin-top: 15px;
+  }
+  select {
+    border: none;
+    position: absolute;
+    margin-right: 480px;
+    margin-top: 8px;
+    background-color: #008072;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 80px;
+    height: 22px;
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  select:focus {
+    border: none;
+  }
+  option {
+  }
+  input {
+    width: 450px;
+    height: 37px;
+    border-radius: 18px;
+    border: none;
+    padding-right: 17px;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    font-family: "Yekan";
+    color: #737373;
+  }
+  input:focus {
+    border: none;
+  }
+  .bi-mailbox {
+    position: absolute;
+    margin-right: 580px;
+    margin-top: 8px;
+    color: #00a693;
+    font-weight: bold;
+  }
+}
+
+.footer{
+    background-color: #fff;
+    h1{
+        padding-top: 50px;
+    }
+}

@@ -1,30 +1,119 @@
 <template>
-  <div class="d-flex justify-content-center my-5 slider">
-    <div id="carouselExampleIndicators" class="carousel slide col-11" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/1.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/2.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/3.webp" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div class="firstSection">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="slider1">
+     
+        <swiper-container class="mySwiper" scrollbar-hide="true">
+          <swiper-slide><img src="../assets/1.webp" alt=""></swiper-slide>
+          <swiper-slide><img src="../assets/2.webp" alt=""></swiper-slide>
+          <swiper-slide><img src="../assets/3.webp" alt=""></swiper-slide>
+
+        </swiper-container>
       </div>
+
+  
+    </div>
   </div>
+  </div>
+  <!-- <div class="slider3">
+    <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+      <swiper-slide>Slide 1</swiper-slide>
+      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide>Slide 3</swiper-slide>
+      <swiper-slide>Slide 4</swiper-slide>
+      <swiper-slide>Slide 5</swiper-slide>
+      <swiper-slide>Slide 6</swiper-slide>
+      <swiper-slide>Slide 7</swiper-slide>
+      <swiper-slide>Slide 8</swiper-slide>
+      <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+  </div> -->
 </template>
+
+
+<style scoped lang="scss">
+
+.slider1 {
+  padding: 20px;
+  swiper-container {
+    width: 100%;
+    height: 70vh;
+
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.slider3 {
+  swiper-container {
+    width: 240px;
+    height: 320px;
+  }
+
+  swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+
+  swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+
+  swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+
+  swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+
+  swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+
+  swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+
+  swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+}
+</style>
