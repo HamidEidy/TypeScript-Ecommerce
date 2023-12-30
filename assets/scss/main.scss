@@ -51,6 +51,9 @@ body {
     color: $text-color;
     background-color: $bg-color;
 }
+.number{
+    font-family: "Vazir";
+}
 .paddinglayout {
     padding: 0px 100px;
 }
@@ -296,4 +299,36 @@ color:  #C13584 ;
     h1{
         padding-top: 50px;
     }
+}
+
+
+
+
+
+
+
+
+.content{
+    margin-top: 50px;
+    background-color: #fff;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 50px;
+}
+h1{
+    margin-bottom: 50px;
+    color: #000000;
+    font-size: 26px;
+}
+ul {
+  list-style-type: circle;
+}
+span {
+  color: $primary;
+  font-size: 80px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: $primary_light;
+}
+.list{
+    line-height: 3px;
 }

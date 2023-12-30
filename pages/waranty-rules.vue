@@ -1,23 +1,36 @@
 <template>
-    <h1>
-        شرایط گارانتی
-    </h1>
-    <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
-    cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-    </swiper-slide>
-    <swiper-slide>
-      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-    </swiper-slide>
-  </swiper-container>
-    
+  <div class="d-flex justify-content-center">
+    <div class="content shadow-lg">
+    <div class="text-center"><h1><span>.</span>     شرایط گارانتی</h1></div>
+
+    <div class="list">
+      <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+      <p>
+     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+      <p>
+   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+      <p>
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+      <p>
+    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+      <p>
+     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        و با استفاده از طراحان گرافیک است.
+      </p>
+    </div>
+</div>
+  </div>
       
 </template>
 

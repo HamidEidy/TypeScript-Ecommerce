@@ -18,7 +18,7 @@
       <div class="d-flex">
         <div id="call">
           <p>با ما تماس بگیرید</p>
-          <p>02152415265</p>
+          <p class="number">02152415265</p>
         </div>
 
         <div id="icons">
@@ -29,7 +29,7 @@
     </header>
     <nav class="col-9 d-flex justify-content-between align-items-center">
       <div id="routlink">
-    <nuxt-link to="/Menu">محصولات</nuxt-link>
+    <nuxt-link to="/Menu"> محصولات</nuxt-link>
     <nuxt-link to="/how-to-buy">راهنمای خرید</nuxt-link>
     <nuxt-link to="/waranty-rules">شرایط گارانتی</nuxt-link>
 
