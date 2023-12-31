@@ -83,6 +83,9 @@ header {
         font-family: "Yekan";
         color: #737373;
     }
+    input:focus{
+        outline: none;
+    }
     .bi-search {
         position: absolute;
         margin-right: 420px;
@@ -97,7 +100,7 @@ header {
             margin: 0px 10px;
             color: $primary;
             border-radius: 50px;
-            padding: 4px 10px;
+            padding: 0px 10px;
         }
         i:hover {
             background-color: #00a693;
