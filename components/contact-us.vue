@@ -1,75 +1,113 @@
 <template>
-  <div class="sugest d-flex justify-content-center">
-    <div class="col-10 row align-items-center">
-      <div class="col-5 text-center">
-        <h6>ارتباط با ما</h6>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف به</p>
-      </div>
-      <div class="col-7 text-center">
-        <div class="slider2">
-          <swiper-container
-            class="mySwiper"
-            pagination="true"
-            effect="cube"
-            grab-cursor="true"
-            cube-effect-shadow="true"
-            cube-effect-slide-shadows="true"
-            cube-effect-shadow-offset="20"
-            cube-effect-shadow-scale="0.94"
-          >
-            <swiper-slide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </swiper-slide>
-          </swiper-container>
-        </div>
-      </div>
+  <div class="client d-flex justify-content-center mt-5 ">
+    <div id="maps" class="map col-9 row align-items-center  shadow-lg rounded">
+
     </div>
   </div>
-  
+  <div class="client d-flex justify-content-center mt-5 mb-5">
+    <div class="contact col-9 row align-items-center  shadow-lg rounded">
+
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.sugest{
-    padding-top: 50px;
+.map{
+  height: 30vh;
 }
-h6{
-    font-size: 30px;
-    color: #00a693;
-    padding-top: 100px;
+.contact{
+  height: 60vh;
 }
-.slider2 {
+</style>
 
-  //position: relative;
- // display: flex;
- // justify-content: center;
-  swiper-container {
-    width: 500px;
-    height: 300px;
-  //  position: absolute;
-    //  left: 50%;
-    //  top: 15h;
-    //  margin-left: -150px;
-    //  margin-top: -150px;
+<script setup>
+const { $leaflet } = useNuxtApp();
+
+onMounted(() => {
+    let map = $leaflet.map('maps').setView([35.700105, 51.400394], 14)
+    
+    // let tiles = $leaflet.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    //     maxZoom: 18,
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+    //         'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //     id: 'mapbox/streets-v11',
+    //     tileSize: 512,
+    //     zoomOffset: -1
+    // }).addTo(map);
+
+    let tiles = $leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+    }).addTo(map);
+
+    let marker = $leaflet.marker([35.700105, 51.400394], {
+        icon: $leaflet.icon({
+            popupAnchor: [12, 6],
+            iconUrl: '/map/marker-icon.png',
+            shadowUrl: '/map/marker-shadow.png'
+        })
+    }).addTo(map)
+   })
+   
+</script>
+
+<style lang="scss" scoped>
+
+.leaflet-bar{
+  box-shadow: none;
+}
+.leaflet-control-zoom a{
+  box-shadow: 0 1px 5px rgba(0,0,0,0.65); 
+}
+.leaflet-bar a{
+  border-radius: 4px;
+  background-color: #002244;
+  border: 1px solid rgba(0,0,0,.15);
+  color: #FB4F14;
+}
+.leaflet-bar a:last-child{
+  border: 1px solid rgba(0,0,0,.15);
+}
+.leaflet-bar a:hover{
+  background-color: #FB4F14;
+  border: 1px solid rgba(0,0,0,.15);
+  color: #002244;
+}
+.leaflet-control-zoom-in{
+  margin-top: 10px;
+}
+.leaflet-control-zoom-out{
+  margin-top: 15px;
+}
+.leaflet-control-zoom-in{
+  color: black;
+  background-color: aqua;
+  size: 10px;
+}
+span{
+  font-size: 10px !important; 
+}
+#map{
+
+  a{
+    font-size: 10px;
+  }
+}
+.leaflet-control-zoom-in{
+  font-size: 10px !important;
+}
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  font: bold 10px 'Lucida Console', Monaco, monospace;
+  text-indent: 1px;
+  }
+.leaflet-control-zoom-out {
+  font-size: 10px;
   }
 
-  swiper-slide {
-    background-position: center;
-    background-size: cover;
+.leaflet-touch .leaflet-control-zoom-in {
+  font-size: 12px;
   }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
+.leaflet-touch .leaflet-control-zoom-out {
+  font-size: 14px;
   }
-  
-}
 </style>

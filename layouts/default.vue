@@ -42,7 +42,7 @@
       </div>
     </div>
       </div>
-      <a id="me" href="">لینکدین من</a>
+      <a id="me" href="">درباره من</a>
     </nav>
   </div>
 </template> 

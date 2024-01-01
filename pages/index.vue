@@ -2,6 +2,8 @@
   <slider />
   <suggestions /> 
   <Menu />
-  <clientComment />
+  <!-- <clientComment /> -->
+  <contact-us />
   <subscribe-to-new />
+
 </template>

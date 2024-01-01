@@ -1,6 +1,6 @@
 <template>
   <div class="menu d-flex justify-content-center my-5">
-    <div class="d-flex col-10 row align-items-center shadow-lg rounded">
+    <div class="d-flex col-9 row align-items-center shadow-lg rounded">
 
         <div class="col border-end">
           <img
