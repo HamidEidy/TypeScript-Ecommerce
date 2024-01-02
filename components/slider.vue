@@ -1,6 +1,6 @@
 <template>
   <div class="firstSection d-flex justify-content-center">
-    <div class="col-9 row">
+    <div class="col-10 row">
       <div class="row mt-4">
           <div class="slider1 col-8">
             <swiper-container class="mySwiper" scrollbar-hide="true">

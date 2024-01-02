@@ -11,7 +11,7 @@ $primary-dim: #aecacc;
 $success-light: #effff7;
 $warning-light: #fff8ea;
 $light: #ebebeb;
-$white: #f9f9f9;
+$white: #f3f1f1;
 $grey: #737373;
 $text-color: #4c5e60;
 $product-variant: #f3f3f3;
@@ -51,26 +51,223 @@ body {
     color: $text-color;
     background-color: $bg-color;
 }
-.number{
+.number {
     font-family: "Vazir";
 }
 .paddinglayout {
     padding: 0px 100px;
 }
-.head{
-
+.head {
     background-color: #ffffff;
-header {
-    background-color: #ffffff;
-    p {
-        font-size: 10px;
-        font-weight: 900;
-        line-height: 0;
+    header {
+        background-color: #ffffff;
+        p {
+            font-size: 10px;
+            font-weight: 900;
+            line-height: 0;
 
-        margin-top: 5px;
+            margin-top: 5px;
+        }
+        img {
+            height: 29px;
+        }
+        input {
+            width: 450px;
+            height: 37px;
+            border-radius: 18px;
+            border: none;
+            padding-right: 17px;
+            font-size: 13px;
+            background-color: $white;
+            font-family: "Yekan";
+            color: #737373;
+        }
+        input:focus {
+            outline: none;
+        }
+        .bi-search {
+            position: absolute;
+            margin-right: 420px;
+            margin-top: 8px;
+            color: $primary;
+            font-weight: bold;
+        }
+        .bi-search:hover {
+            cursor: pointer;
+        }
+        #icons {
+            font-size: 18px;
+
+            i {
+                background-color: $primary_light;
+                margin: 0px 10px;
+                color: $primary;
+                border-radius: 50px;
+                padding: 0px 10px;
+            }
+            i:hover {
+                background-color: #00a693;
+                color: aliceblue;
+                transition: 0.5s;
+                cursor: pointer;
+                box-shadow: 5px 10px 20px 1px #aee5de77;
+            }
+        }
+    }
+    nav {
+        background-color: #ffffff;
+        height: 35px;
+
+        a {
+            text-decoration: none;
+            padding: 0px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            color: $text-color;
+        }
+    }
+
+    // .slider img {
+    //     height: 60vh;
+    // }
+    .dropbtn {
+        background-color: #ffffff00;
+        color: #58595b;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 10px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        padding: 10px 0px;
+    }
+
+    .dropdown-content a {
+        color: #58595b;
+        padding: 10px 10px;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: #000000;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    //.dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+.sugest {
+    background-color: $primary_light;
+    padding: 50px 0px;
+
+    h1 {
+        color: $primary;
+        //   text-decoration: underline;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    swiper-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+}
+.menu {
+    .col {
+        text-align: center;
+        padding: 20px 0px;
+    }
+    h2 {
+        font-size: 15px;
+        font-weight: bold;
     }
     img {
-        height: 29px;
+        margin-bottom: 10px;
+        width: 80px;
+    }
+    .col:hover {
+        cursor: pointer;
+    }
+}
+.subscribe {
+    .mail {
+        position: absolute;
+        margin-top: 10px;
+        background-color: #ffff;
+        margin-bottom: 50px;
+        border-radius: 10px;
+
+        .col-8 {
+            border-left: 3px solid $white;
+            height: 70px;
+        }
+        .col-4 {
+            i {
+                font-size: 25px;
+                padding: 5px 10px 0px 10px;
+                border-radius: 10px;
+            }
+            .bi-youtube {
+                color: $danger;
+            }
+            .bi-instagram {
+                color: #c13584;
+            }
+            .bi-twitter {
+                color: #1d9bf0;
+            }
+        }
+    }
+    .mail p {
+        margin-top: 15px;
+        color: $text-color;
+        padding-right: 15px;
+    }
+    select {
+        border: none;
+        position: absolute;
+        margin-right: 680px;
+        background-color: $primary;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        align-items: center;
+        cursor: pointer;
+        color: #ffffff;
+        border-radius: 20px;
+        width: 80px;
+        height: 25px;
+        font-size: 13px;
+      //  padding: 0px 5px 5px 0px;
+    }
+    select:focus {
+        outline: none;
     }
     input {
         width: 450px;
@@ -78,260 +275,117 @@ header {
         border-radius: 18px;
         border: none;
         padding-right: 17px;
-        font-size: 13px;
+        font-size: 15px;
         background-color: $white;
         font-family: "Yekan";
         color: #737373;
     }
-    input:focus{
+    input:focus {
         outline: none;
     }
-    .bi-search {
+    i{
+        cursor: pointer;
+    }
+    .bi-mailbox {
         position: absolute;
-        margin-right: 420px;
-        margin-top: 8px;
+        margin-right: 780px;
+        font-size: 20px;
         color: $primary;
         font-weight: bold;
+        cursor: pointer;
     }
-    #icons {
-        font-size: 18px;
-        i {
-            background-color: $primary_light;
-            margin: 0px 10px;
-            color: $primary;
-            border-radius: 50px;
-            padding: 0px 10px;
-        }
-        i:hover {
-            background-color: #00a693;
-            color: aliceblue;
-            transition: 0.5s;
-            cursor: pointer;
-            box-shadow: 5px 10px 20px 1px #aee5de77;
-        }
-    }
-}
-nav {
-    background-color: #ffffff;
-    height: 35px;
 
-    a {
-        text-decoration: none;
-        display: inline;
-        padding: 0px 10px;
+
+}
+.contact-us {
+    h2{
+        margin: 30px;
+    }
+    p {
+        margin: 10px 30px 0px 0px;
+    }
+    input {
+        margin: 10px 30px 0px 0px;
+        width: 90%;
+        height: 40px;
+        border-radius: 18px;
+        border: none;
+        padding-right: 17px;
         font-size: 15px;
-        font-weight: 500;
-        color: $text-color;
+        background-color: $white;
+        font-family: "Yekan";
     }
-}
-
-// .slider img {
-//     height: 60vh;
-// }
-.dropbtn {
-    background-color: #ffffff00;
-    color: #58595b;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    padding: 10px 0px;
-}
-
-.dropdown-content a {
-    color: #58595b;
-    padding: 10px 10px;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    color: #000000;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-//.dropdown:hover .dropbtn {background-color: #3e8e41;}
-}
-.sugest{
-    background-color: $primary_light;
-    padding: 50px 0px;
-
-    h1{
-        color: $primary;
-    text-decoration:underline;
-    font-size: 35px;
-    margin-bottom: 15px;
-    } swiper-container {
-      width: 300px;
-      height: 300px;
-    
-    }
-    
-    swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
-    
-    swiper-slide img {
-      display: block;
-      width: 100%;
+    input:focus {
+        outline: none;
     }
 
-
-
-
-
-
-}
-.menu{
-    .col {
-        text-align: center;
-        padding: 20px 0px;
-      
-      }
-      h2 {
-        font-size: 15px;
-      }
-      img{
-          margin-bottom: 20px;
-          width: 50px;
-      }
-      
-      .col:hover{
-         cursor: pointer;
-         border: none;
-         box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
-         transition: .1s;
-   
-      }
-}
-.subscribe{
-    
-.mail {
-position: absolute;
-margin-top: 10px;
-    background-color: #ffff;
-    margin-bottom: 50px;
-border-radius: 10px;
-
-.col-8{
-    border-left: 1px solid black ;
-    height: 70px;
-}
-.col-4{
-    i{
-        font-size: 25px;
-        padding: 5px 10px 0px 10px;
+    textarea:focus {
+        outline: none;
+    }
+    textarea {
+        width: 90%;
+        margin: 10px 30px 0px 0px;
         border-radius: 10px;
+        border: none;
+        padding-right: 17px;
+        font-size: 15px;
+        background-color: $white;
+        font-family: "Yekan";
+        // color: #737373;
     }
-    .bi-youtube{
-color: $danger;
+
+    #btn {
+        background-color: #00a693;
+        color: #fff;
+        width: 120px;
+        font-size: 17px;
+        text-align: center;
+        padding: 5px 15px;
+        border-radius: 10px;
+        margin-left: 40px;
+        margin-bottom: 50px;
+        float: left;
+        cursor: pointer;
     }
-    .bi-instagram{
-color:  #C13584 ;
+    .map {
+        height: 30vh;
     }
-    .bi-twitter{
-     color:   #1D9BF0 ;
+    .contact {
+        .col-7 {
+            border-left: 3px solid $white;
+        }
     }
-}
-  }
-  .mail p {
-   margin-top: 15px;
-  }
-  select {
-    border: none;
-    position: absolute;
-    margin-right: 480px;
-    margin-top: 8px;
-    background-color: #008072;
-    color: #ffffff;
-    border-radius: 20px;
-    width: 80px;
-    height: 22px;
-    font-size: 12px;
-    padding: 0px 5px;
-  }
-  select:focus {
-    border: none;
-  }
-  option {
-  }
-  input {
-    width: 450px;
-    height: 37px;
-    border-radius: 18px;
-    border: none;
-    padding-right: 17px;
-    font-size: 13px;
-    background-color: #f9f9f9;
-    font-family: "Yekan";
-    color: #737373;
-  }
-  input:focus {
-    border: none;
-  }
-  .bi-mailbox {
-    position: absolute;
-    margin-right: 580px;
-    margin-top: 8px;
-    color: #00a693;
-    font-weight: bold;
-  }
 }
 
-.footer{
+.footer {
     background-color: #fff;
-    h1{
+    h1 {
         padding-top: 50px;
     }
 }
 
-
-
-
-
-
-
-
-.content{
-    margin-top: 50px;
+.content {
+    margin-top: 20px;
     background-color: #fff;
-    width: 80vw;
     border-radius: 10px;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
+    line-height: 50px;
 }
-h1{
-    margin-bottom: 50px;
-    color: #000000;
+h1 {
+    margin-bottom: 20px;
+    color: $text-color;
     font-size: 26px;
+    font-weight: bold;
 }
 ul {
-  list-style-type: circle;
+    list-style-type: circle;
 }
 span {
-  color: $primary;
-  font-size: 80px;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: $primary_light;
+    color: $primary;
+    font-size: 100px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $primary_light;
 }
-.list{
-    line-height: 3px;
+.list {
+    line-height: 10px;
 }

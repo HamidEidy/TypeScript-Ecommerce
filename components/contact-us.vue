@@ -1,12 +1,13 @@
 <template>
-  <div class="client d-flex justify-content-center mt-5">
+  <div class="contact-us">
+  <div class=" client d-flex justify-content-center mt-5">
     <div
       id="maps"
-      class="map col-9 row align-items-center shadow-lg rounded"
+      class="map col-10 row align-items-center shadow-lg rounded"
     ></div>
   </div>
   <div class="client d-flex justify-content-center mt-5 mb-5">
-    <div class="contact col-9 row align-items-center shadow-lg rounded">
+    <div class="contact col-10 row shadow-lg rounded">
       <div class="col-7">
         <h2>تماس با ما</h2>
         <p>نام و نام خانوادگی</p>
@@ -19,33 +20,24 @@
         <textarea type="text" placeholder="پیام خود را برای ما بنویسید" />
         <p id="btn">ارسال پیام</p>
       </div>
-      <div class="col-5">
-        <p>    آدرس ایمیل : hamidreza.eidy1999@gmail.com</p>
-        <p>پشتیبانی : 02155225522</p>
-        <p>پیشنهادات و انتقادات : داخلی 100</p>
-        <p>آدرس دفتر مرکزی : تهران، ولیعصر</p>
+      <div class="col-5 mt-5">
+        <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
+        <p>پشتیبانی :
+          <b class="number"> 02155225522</b>
+          </p>
+        <p>پیشنهادات و انتقادات :
+          <b class="number"> داخلی 
+          100
+        </b>
+        </p>
+        <p>
+         <b>آدرس دفتر مرکزی : تهران، ولیعصر</b> 
+        </p>
       </div>
     </div>
   </div>
+</div>
 </template>
-
-<style lang="scss" scoped>
-#btn{
-  background-color: #00a693 ;
-  width: 120px;
-  font-size: 20px;
-text-align: center;
-padding: 5px 15px;
-border-radius: 10px;
-}
-.map {
-  height: 30vh;
-}
-.contact {
-padding: 50px 10px;
-
-}
-</style>
 
 <script setup>
 const { $leaflet } = useNuxtApp();
@@ -80,30 +72,4 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-p{
-  margin-top: 30px;
-}
-input {
-  width: 450px;
-  height: 37px;
-  border-radius: 18px;
-  border: none;
-  padding-right: 17px;
-  font-size: 13px;
-
-  font-family: "Yekan";
-  background-color: #737373;
-}
-textarea{
-  border-radius: 18px;
-  border: none;
-  padding-right: 10px;
-  font-size: 13px;
-  width: 450px;
-  font-family: "Yekan";
-  background-color: #737373;
-}
-input:focus{
-  outline: none;
-}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="subscribe  d-flex justify-content-center">
-    <div class="mail shadow-lg col-9 d-flex row align-items-center">
-      <div class="col-8 d-flex align-items-center justify-content-around">
+    <div class="mail shadow-lg col-10 d-flex row align-items-center">
+      <div class="col-8 d-flex align-items-center justify-content-between">
         <p>عضویت در خبرنامه</p>
         <i class="bi bi-mailbox"></i>
         <select aria-label="Default select example">
