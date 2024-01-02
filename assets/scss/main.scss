@@ -251,7 +251,7 @@ body {
     select {
         border: none;
         position: absolute;
-        margin-right: 680px;
+        margin-right: 45vw;
         background-color: $primary;
         display: flex;
         flex-direction: row;
@@ -270,7 +270,7 @@ body {
         outline: none;
     }
     input {
-        width: 450px;
+        width: 37vw;
         height: 37px;
         border-radius: 18px;
         border: none;
@@ -288,7 +288,7 @@ body {
     }
     .bi-mailbox {
         position: absolute;
-        margin-right: 780px;
+        margin-right: 51vw;
         font-size: 20px;
         color: $primary;
         font-weight: bold;
