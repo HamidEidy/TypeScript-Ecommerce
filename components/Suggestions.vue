@@ -13,10 +13,10 @@
       <div class="col-6 text-end">
         <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
         cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
-        <swiper-slide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <swiper-slide v-for="item in data.data" :key="item.index">
+          <Card />
         </swiper-slide>
-        <swiper-slide>
+        <!-- <swiper-slide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </swiper-slide>
         <swiper-slide>
@@ -24,7 +24,7 @@
         </swiper-slide>
         <swiper-slide>
           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </swiper-slide>
+        </swiper-slide> -->
       </swiper-container>
       </div>
     </div>
@@ -32,4 +32,11 @@
 </template>
 <style scoped>
 
+
 </style>
+
+
+<script setup>
+const {data} = await useFetch('https://typeecomapi.hamideidy.ir/api/random-products?count=4');
+
+</script>

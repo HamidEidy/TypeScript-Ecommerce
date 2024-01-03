@@ -38,9 +38,9 @@
         <div class="dropdown">
           <button class="dropbtn">سایر ...</button>
           <div class="dropdown-content">
-            <a href="#">خرید اقساطی</a>
+            <nuxt-link to="/installment">خرید اقساطی</nuxt-link>
             <nuxt-link to="/contact">تماس با ما</nuxt-link>
-            <a href="#">سوالات متداول</a>
+            <nuxt-link to="/faq">سوالات متداول</nuxt-link>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
   <div class="d-flex justify-content-center">
     <div class="content shadow-lg col-10 my-4">
       <div class="text-center">
-        <h1><span>.</span> راهنمای خرید</h1>
+        <h1><span class="highlight">.</span> راهنمای خرید</h1>
       </div>
 
       <div>

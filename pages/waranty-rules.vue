@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center">
     <div class="content shadow-lg col-10 my-4">
-    <div class="text-center"><h1><span>.</span>     شرایط گارانتی</h1></div>
+    <div class="text-center"><h1><span class="highlight">.</span>     شرایط گارانتی</h1></div>
 
    
     <div>
