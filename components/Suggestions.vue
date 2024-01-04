@@ -13,18 +13,19 @@
       <div class="col-6 text-end">
         <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
         cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
-        <swiper-slide v-for="item in data.data" :key="item.index">
-          <Card />
-        </swiper-slide>
-        <!-- <swiper-slide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        
+        <swiper-slide>
+          <img src="/suggest/_1a2c1f09-67e0-4152-95b1-d0e707f71dba.jpeg" />
         </swiper-slide>
         <swiper-slide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="/suggest/_8807530b-4609-4c96-aa40-090fd7a17a46.jpeg" />
         </swiper-slide>
         <swiper-slide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </swiper-slide> -->
+          <img src="/suggest/_8bedd4b3-c1fb-4718-8181-e33c8c3bf3e3.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/suggest/_9eab0aa9-cc69-4a47-a013-9c48f6045b5a.jpeg" />
+        </swiper-slide>
       </swiper-container>
       </div>
     </div>

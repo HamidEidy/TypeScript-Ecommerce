@@ -5,8 +5,7 @@
     >
       <div id="logo">
         <nuxt-link to="/"
-          ><img src="../assets/1641798048-v86QVTiiqSZZd0o0.svg" alt=""
-        /></nuxt-link>
+          ><h1>فروشگاه موبایل</h1></nuxt-link>
       </div>
       <div>
         <i class="bi bi-search"></i>

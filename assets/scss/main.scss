@@ -60,6 +60,9 @@ body {
 .head {
     background-color: #ffffff;
     header {
+        h1, a{
+            text-decoration: none;
+        }
         background-color: #ffffff;
         p {
             font-size: 10px;
@@ -301,6 +304,9 @@ body {
     }
     p {
         margin: 10px 30px 0px 0px;
+    }
+    .col-5{
+        line-height: 3;
     }
     input {
         margin: 10px 30px 0px 0px;
