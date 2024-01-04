@@ -8,7 +8,7 @@
   </div>
   <div class="client d-flex justify-content-center mt-5 mb-5">
     <div class="contact col-10 row shadow-lg rounded">
-      <div class="col-7">
+      <div class="col-lg-7 col-sm-12">
         <h2>تماس با ما</h2>
         <p>نام و نام خانوادگی</p>
         <input type="text" placeholder="نام و نام خانوادگی خود را وارد نمایید" />
@@ -20,7 +20,7 @@
         <textarea type="text" placeholder="پیام خود را برای ما بنویسید" />
         <p id="btn">ارسال پیام</p>
       </div>
-      <div class="col-5 mt-5">
+      <div class="col-lg-5 d-none d-lg-block mt-5">
         <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
         <p>پشتیبانی :
           <b class="number"> 02155225522</b>

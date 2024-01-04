@@ -2,14 +2,14 @@
   <div class="firstSection d-flex justify-content-center">
     <div class="col-10 row">
       <div class="row mt-4">
-          <div class="slider1 col-8">
+          <div class="slider1 col-lg-8 col-sm-12">
             <swiper-container class="mySwiper" scrollbar-hide="true">
               <swiper-slide><img src="../assets/1.webp" alt="" /></swiper-slide>
               <swiper-slide><img src="../assets/2.webp" alt="" /></swiper-slide>
               <swiper-slide><img src="../assets/3.webp" alt="" /></swiper-slide>
             </swiper-container>
           </div>
-          <div class="mini col-4">
+          <div class="mini col-lg-4 col-sm-6">
             <img id="img1" src="../assets/mini1.webp" alt="" />
             <img id="img2" src="../assets/mini2.webp" alt="" />
           </div>

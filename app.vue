@@ -1,11 +1,25 @@
 <template>
   <NuxtLayout />
   <NuxtPage />
-<NuxtLayout name="footer" />
+<NuxtLayout class="footerlayout" name="footer"/>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import {useCartStore} from "./store/count"
 const state = useCartStore();
+// const { path } = useRoute();
+
+// console.log(path);
+
+
+//  onMounted(() =>{
+
+//   if (path === '/installment') {
+//     document.querySelector('.subscribe').style.display = 'none'
+// }else{
+//   element.style.display = 'block';
+// }
+//  })
+
 
 </script>

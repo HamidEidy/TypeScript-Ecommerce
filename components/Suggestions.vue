@@ -1,7 +1,7 @@
 <template>
   <div class="sugest d-flex justify-content-center mt-5">
-    <div class="col-6 row align-items-center">
-      <div class="col-6 text-center">
+    <div class="col-lg-6 col-sm-12 row align-items-center">
+      <div class="col-lg-6 col-sm-12 text-center">
         <h1>محصولات پیشنهادی</h1>
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
@@ -10,7 +10,7 @@
           متنوع با هدف به
         </p>
       </div>
-      <div class="col-6 text-end">
+      <div class="col-lg-6 col-sm-12 text-end">
         <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
         cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
         
