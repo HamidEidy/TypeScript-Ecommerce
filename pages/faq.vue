@@ -22,6 +22,7 @@
         <p class="number">021-4455</p></div>
 
   </div>
+  <subscribe-to-new  />
 </template>
 
 <style lang="scss" scoped>

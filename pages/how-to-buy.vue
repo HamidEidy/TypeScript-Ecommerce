@@ -54,5 +54,6 @@
       </div>
     </div>
   </div>
+  <subscribe-to-new  />
 </template>
 
