@@ -46,7 +46,7 @@
         text-align: center;
         padding: 5px 15px;
         border-radius: 10px;
-        margin-left: 3.1vw;
+        margin-left: 2.7vw;
         margin-bottom: 50px;
         float: left;
         cursor: pointer;
@@ -57,7 +57,12 @@
     .contact {
         .col-lg-5 {
             border-right: 3px solid $white;
+            b, .number{
+            color: $primary;
+            font-weight: bold;
+            font-size: 18px;
+            }
         }
-        
+
     }
 }

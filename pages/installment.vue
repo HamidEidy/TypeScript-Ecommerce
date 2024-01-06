@@ -12,15 +12,15 @@
           <p>با خرید اقساطی #یهویی_نده</p>
           <i class="bi bi-arrow-down-circle-fill"></i>
         </div>
-        <div class="content d-flex align-items-center">
-          <div class="col-5">
+        <div class="content d-flex flex-column flex-lg-row align-items-center">
+          <div class="col-lg-5 col-sm-12">
             <img
               id="installpic"
               src="/image-from-rawpixel-id-6262392-png.png"
               alt=""
             />
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-sm-12">
             <h3>شرایط خرید اقساطی</h3>
             <p class="text">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -33,8 +33,9 @@
             <button class="call">در تماس باشید</button>
           </div>
         </div>
-        <div class="text-center mb-5">
-          <h1>فروشگاه موبایل</h1>
+        <h1 class="text-center">فروشگاه موبایل</h1>
+        <div class="d-flex flex-column flex-lg-row justify-content-center mb-5">
+
           <nuxt-link class="text-center" to="/">بازگشت به صفحه اصلی </nuxt-link>
           <nuxt-link class="text-center" to="/Menu">صفحه فروشگاه </nuxt-link>
           <a class="text-center" href="https://github.com/HamidEidy"
