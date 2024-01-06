@@ -55,8 +55,9 @@
         height: 30vh;
     }
     .contact {
-        .col-7 {
-            border-left: 3px solid $white;
+        .col-lg-5 {
+            border-right: 3px solid $white;
         }
+        
     }
 }

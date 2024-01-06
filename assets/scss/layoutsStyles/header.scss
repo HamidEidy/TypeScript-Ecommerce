@@ -61,19 +61,13 @@
     nav {
         background-color: #ffffff;
         height: 30px;
-
         a {
             text-decoration: none;
-            padding: 0px 20px;
             font-size: 15px;
             font-weight: 500;
             color: $text-color;
         }
     }
-
-    // .slider img {
-    //     height: 60vh;
-    // }
     .dropbtn {
         background-color: #ffffff00;
         color: #58595b;
@@ -82,7 +76,6 @@
     font-weight: 500;
         border: none;
     }
-
     .dropdown {
         position: relative;
         display: inline-block;

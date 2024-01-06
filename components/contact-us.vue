@@ -20,7 +20,7 @@
         <textarea type="text" placeholder="پیام خود را برای ما بنویسید" />
         <p id="btn">ارسال پیام</p>
       </div>
-      <div class="col-lg-5 d-none d-lg-block mt-5">
+      <div class="col-lg-5 d-none d-lg-block pt-5">
         <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
         <p>پشتیبانی :
           <b class="number"> 02155225522</b>
