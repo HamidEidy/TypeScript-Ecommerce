@@ -1,0 +1,17 @@
+.menu {
+    .col {
+        text-align: center;
+        padding: 20px 0px;
+    }
+    h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    img {
+        margin-bottom: 10px;
+        width: 80px;
+    }
+    .col:hover {
+        cursor: pointer;
+    }
+}

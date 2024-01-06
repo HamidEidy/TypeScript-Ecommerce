@@ -35,100 +35,18 @@
         </div>
         <div class="text-center mb-5">
           <h1>فروشگاه موبایل</h1>
-        <nuxt-link class="text-center" to="/">بازگشت به صفحه اصلی </nuxt-link>
-        <nuxt-link class="text-center" to="/Menu">صفحه فروشگاه </nuxt-link>
-        <a class="text-center" href="https://github.com/HamidEidy">درباره ما </a>
-        <nuxt-link class="text-center" to="/">ورود و عضویت </nuxt-link>
-        <nuxt-link class="text-center" to="/contact"> تماس با ما</nuxt-link>
-      </div>
+          <nuxt-link class="text-center" to="/">بازگشت به صفحه اصلی </nuxt-link>
+          <nuxt-link class="text-center" to="/Menu">صفحه فروشگاه </nuxt-link>
+          <a class="text-center" href="https://github.com/HamidEidy"
+            >درباره ما
+          </a>
+          <nuxt-link class="text-center" to="/">ورود و عضویت </nuxt-link>
+          <nuxt-link class="text-center" to="/contact"> تماس با ما</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
-
-
-<style scoped lang="scss">
-.bg-img {
-  margin-top: -390px;
-  position: relative;
-}
-.head {
-  background-color: #fbfbfb;
-}
-a {
-  font-size: 20px;
-padding: 0px 20px;
-text-decoration: none;
-}
-
-button {
-  border: none;
-  height: 50px;
-  padding: 0px 30px;
-  border-radius: 10px;
-  margin: 5px;
-}
-.number {
-  font-size: 25px;
-  color: #fff;
-  background-color: #f44485;
-}
-.call {
-  background-color: #fcf2f7;
-  color: #f44485 !important;
-}
-h3 {
-  font-size: 23px;
-  font-weight: 800;
-  display: block;
-  color: #f44485;
-  margin-bottom: 20px;
-}
-.text {
-  font-size: 18px;
-  font-weight: 300;
-  color: #6c6b6b;
-  display: block;
-  text-align-last: right;
-  text-align: justify;
-  line-height: 36px;
-  margin-bottom: 20px;
-}
-.content {
-  background-color: #fbfbfb;
-}
-img {
-  margin-top: -300px;
-}
-#installpic {
-  max-width: 100%;
-  margin-top: 50px;
-}
-.btns {
-  z-index: 1;
-  color: aliceblue;
-  margin: 120px 180px 0px 0px;
-  position: absolute;
-  top: 0;
-  h4 {
-    font-size: 40px;
-    font-weight: 900;
-  }
-  p {
-    margin: 22px 0px;
-    background-color: #1fcf8e;
-    box-shadow: 0 20px 60px 0 rgba(31, 207, 142, 0.6);
-    padding: 10px 50px;
-    border-radius: 10px;
-    width: fit-content;
-    font-size: 25px;
-    font-weight: 800;
-  }
-  i {
-    font-size: 60px;
-  }
-}
-</style>
 
 <script>
 definePageMeta({

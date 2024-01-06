@@ -1,0 +1,26 @@
+
+.sugest {
+    background-color: $primary_light;
+    padding: 50px 0px;
+
+    h1 {
+        color: $primary;
+        //   text-decoration: underline;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    swiper-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+}

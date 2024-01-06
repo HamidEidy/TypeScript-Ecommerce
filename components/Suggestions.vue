@@ -1,7 +1,7 @@
 <template>
   <div class="sugest d-flex justify-content-center mt-5">
-    <div class="col-lg-6 col-sm-12 row align-items-center">
-      <div class="col-lg-6 col-sm-12 text-center">
+    <div class="col-lg-6 col-sm-8 row align-items-center">
+      <div class="col-lg-6 col-sm-12 text-center mb-sm-3">
         <h1>محصولات پیشنهادی</h1>
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
@@ -31,13 +31,3 @@
     </div>
   </div>
 </template>
-<style scoped>
-
-
-</style>
-
-
-<script setup>
-const {data} = await useFetch('https://typeecomapi.hamideidy.ir/api/random-products?count=4');
-
-</script>

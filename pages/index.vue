@@ -1,10 +1,9 @@
 <template>
   <slider />
-  <suggestions /> 
+  <suggestions />
   <Menu />
   <!-- <clientComment /> -->
   <contact-us />
-  <subscribe-to-new  />
-
+  <subscribe-to-new />
 </template>
 
