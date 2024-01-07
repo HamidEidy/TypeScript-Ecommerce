@@ -1,45 +1,75 @@
 <template>
   <div class="contact-us">
-  <div class=" client d-flex justify-content-center mt-5">
-    <div
-      id="maps"
-      class="map col-10 row align-items-center shadow-lg rounded"
-    ></div>
-  </div>
-  <div class="client d-flex justify-content-center mt-5 mb-5">
-    <div class="contact col-10 row shadow-lg rounded">
-      <div class="col-lg-7 col-sm-12">
-        <h2>تماس با ما</h2>
-        <p>نام و نام خانوادگی</p>
-        <input type="text" placeholder="نام و نام خانوادگی خود را وارد نمایید" />
-        <p>آدرس ایمیل</p>
-        <input type="text" placeholder="آدرس ایمیل خود را وارد نمایید" />
-        <p>تلفن همراه</p>
-        <input type="text" placeholder="شماره خود را وارد کنید" />
-        <p>پیام شما</p>
-        <textarea type="text" placeholder="پیام خود را برای ما بنویسید" />
-        <p id="btn">ارسال پیام</p>
-      </div>
-      <div class="col-lg-5 d-none d-lg-block pt-5">
-        <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
-        <p>پشتیبانی :
-          <b class="number"> 02155225522</b>
+    <div class="client d-flex justify-content-center mt-5">
+      <div
+        id="maps"
+        class="map col-10 row align-items-center shadow-lg rounded"
+      ></div>
+    </div>
+    <div class="client d-flex justify-content-center mt-5 mb-5">
+      <div class="contact col-10 row shadow-lg rounded">
+        <form id="form" class="col-lg-7 col-sm-12">
+          <h2>تماس با ما</h2>
+          <p>نام و نام خانوادگی</p>
+          <input
+            v-model="formdata.name"
+            type="text"
+            placeholder="نام و نام خانوادگی خود را وارد نمایید"
+          />
+          <p>آدرس ایمیل</p>
+          <input
+            v-model="formdata.email"
+            type="text"
+            placeholder="آدرس ایمیل خود را وارد نمایید"
+          />
+          <p>تلفن همراه</p>
+          <input
+            v-model="formdata.number"
+            type="text"
+            placeholder="شماره خود را وارد کنید"
+          />
+          <p>پیام شما</p>
+          <textarea
+            v-model="formdata.text"
+            type="text"
+            placeholder="پیام خود را برای ما بنویسید"
+          />
+          <p id="btn" @click="sendMessage(e)">ارسال پیام</p>
+        </form>
+        <div class="col-lg-5 d-none d-lg-block pt-5">
+          <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
+          <p>
+            پشتیبانی :
+            <b class="number"> 02155225522</b>
           </p>
-        <p>پیشنهادات و انتقادات :
-          <b class="number"> داخلی 
-          100
-        </b>
-        </p>
-        <p>
-         <b>آدرس دفتر مرکزی : تهران، ولیعصر</b> 
-        </p>
+          <p>
+            پیشنهادات و انتقادات :
+            <b class="number"> داخلی 100 </b>
+          </p>
+          <p>
+            <b>آدرس دفتر مرکزی : تهران، ولیعصر</b>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+interface FormData {
+  name: string;
+  email: string;
+  number: string;
+  text: string;
+}
+const formdata: FormData = {
+  name: ",,",
+  email: "",
+  number: "",
+  text: "",
+};
+
+
 const { $leaflet } = useNuxtApp();
 onMounted(() => {
   let map = $leaflet.map("maps").setView([35.700105, 51.400394], 14);

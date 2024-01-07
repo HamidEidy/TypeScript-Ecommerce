@@ -1,6 +1,10 @@
 <template>
   <div class="installment">
-    <img src="/bg-header.webp" class="bg-img" alt="" />
+    <div >
+      <img v-if="width > 700" src="/bg-header.webp" class="bg-img" alt="" />
+      <img v-else src="/bg-header-res.webp" class="bg-img"/>
+    </div>
+
     <div class="d-flex flex-column align-items-center head">
       <div class="d-flex flex-column col-10 justify-content-between">
         <div class="btns">
@@ -49,8 +53,16 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 definePageMeta({
   layout: false,
 });
+
+onMounted(() =>{
+
+  var width = window.innerWidth;
+  console.log("عرض دستگاه: " + width);
+
+})
+
 </script>
