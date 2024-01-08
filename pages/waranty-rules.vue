@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center  mb-5">
     <div class="content shadow-lg col-10 my-4">
       <div class="text-center">
         <h1><span class="highlight">.</span> شرایط گارانتی</h1>

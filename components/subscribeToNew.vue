@@ -33,10 +33,10 @@
     </div>
   </div>
   <div
-    class="footer mb-5 d-flex mt-5 pt-5 flex-column text-center justify-content-center"
+    class="footer d-flex mt-2 pt-5 flex-column text-center justify-content-center"
   >
-    <h1 class="mt-4">پیاده سازی توسط حمیدرضا عیدی</h1>
-    <div class="mb-5">
+    <h1>پیاده سازی توسط حمیدرضا عیدی</h1>
+    <div>
       <a href="https://www.linkedin.com/in/hamidrezaeidy/">لینکدین </a>
       <a href="https://github.com/HamidEidy">گیت هاب </a>
       <a href="mailto:hamidreza.eidy1999@gmail.com">ایمیل </a>

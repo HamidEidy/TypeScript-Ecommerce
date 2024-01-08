@@ -7,7 +7,7 @@
       ></div>
     </div>
     <div class="client d-flex justify-content-center mt-5 mb-5">
-      <div class="contact col-10 row shadow-lg rounded">
+      <div class="contact mb-4 col-10 row shadow-lg rounded">
         <form id="form" class="col-lg-7 col-sm-12">
           <h2>تماس با ما</h2>
           <p>نام و نام خانوادگی</p>
