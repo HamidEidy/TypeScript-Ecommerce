@@ -1,4 +1,4 @@
 <template>
-  <contact-us />
+  <contact-form />
   <subscribe-to-new />
 </template>

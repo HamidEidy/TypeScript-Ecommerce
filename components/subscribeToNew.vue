@@ -10,8 +10,9 @@
         <input
           type="text"
           placeholder="آدرس ایمیل خود را وارد نمایید"
+          v-model="mail"
         />
-        <i class="bi bi-mailbox"></i>
+        <i class="bi bi-mailbox" @click="send()"></i>
         <select aria-label="Default select example">
           <option selected>عمومی</option>
           <option value="1">همه</option>
@@ -45,3 +46,10 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { useToast } from "vue-toastification";
+const toast = useToast();
+const mail = ref<string>('')
+const send = () => mail.value ? (mail.value = '', toast.success("ایمیل شما اضافه شد")) : toast.error("لطفا ایمیل خود را وارد کنید")
+
+</script>

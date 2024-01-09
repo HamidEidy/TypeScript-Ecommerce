@@ -12,29 +12,29 @@
           <h2>تماس با ما</h2>
           <p>نام و نام خانوادگی</p>
           <input
-            v-model="formdata.name"
+            v-model="name"
             type="text"
             placeholder="نام و نام خانوادگی خود را وارد نمایید"
           />
           <p>آدرس ایمیل</p>
           <input
-            v-model="formdata.email"
+            v-model="email"
             type="text"
             placeholder="آدرس ایمیل خود را وارد نمایید"
           />
-          <p>تلفن همراه</p>
+          <p>شماره تماس</p>
           <input
-            v-model="formdata.number"
+            v-model="number"
             type="text"
-            placeholder="شماره خود را وارد کنید"
+            placeholder="شماره تماس خود را وارد نمایید"
           />
           <p>پیام شما</p>
           <textarea
-            v-model="formdata.text"
+            v-model="text"
             type="text"
             placeholder="پیام خود را برای ما بنویسید"
           />
-          <p id="btn" @click="sendMessage(e)">ارسال پیام</p>
+          <p id="btn" @click="sendMessage()">ارسال پیام</p>
         </form>
         <div class="col-lg-5 d-none d-lg-block pt-5">
           <p>آدرس ایمیل: <b class="number"> hamidreza.eidy1999@gmail.com</b></p>
@@ -56,18 +56,14 @@
 </template>
 
 <script setup lang="ts">
-interface FormData {
-  name: string;
-  email: string;
-  number: string;
-  text: string;
-}
-const formdata: FormData = {
-  name: ",,",
-  email: "",
-  number: "",
-  text: "",
-};
+import { useToast } from "vue-toastification";
+const toast = useToast();
+const name = ref<string>("");
+const email = ref<string>("");
+const number = ref<string>("");
+const text = ref<string>("");
+const sendMessage = (): any => name.value && email.value && number.value && text.value ? (name.value = email.value = number.value = text.value = "", toast.success("پیام شما ارسال شد")) : toast.error("تمامی فیلد هارا وارد کنید");
+
 
 
 const { $leaflet } = useNuxtApp();
