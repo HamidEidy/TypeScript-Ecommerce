@@ -23,7 +23,7 @@ const config: NuxtConfig = {
   },
   runtimeConfig: {
     public: {
-        apiBase: "",
+      apiBase: "",
     },
 },
   buildModules: ['@nuxt/typescript-build'],
@@ -33,7 +33,7 @@ const config: NuxtConfig = {
   modules: ['@pinia/nuxt'],
   build: {
     transpile: ["vue-toastification"],
-}
+},
 }
 
 export default config
