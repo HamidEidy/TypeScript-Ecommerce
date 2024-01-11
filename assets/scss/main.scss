@@ -78,7 +78,8 @@ ul {
 }
 .highlight {
     color: $primary;
-    font-size: 100px;
+    font-size: 60px;
+   font-family:monospace;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: $primary_light;
 }
